@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/container"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_histories"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:hint="Press Here"
+        android:gravity="top"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear"/>
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:background="#00FF00"
+        android:text="KeyDown"/>
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:background="#FF0000"
+        android:text="KeyUp"/>
+</LinearLayout>
